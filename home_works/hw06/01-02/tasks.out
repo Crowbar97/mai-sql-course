@@ -1,0 +1,61 @@
+SET
+CREATE TABLE
+CREATE TABLE AS
+ALTER TABLE
+ALTER TABLE
+INSERT 0 9
+ aircraft_code |        model        | range 
+---------------+---------------------+-------
+ 773           | Boeing 777-300      | 11100
+ 763           | Boeing 767-300      |  7900
+ SU9           | Sukhoi SuperJet-100 |  3000
+ 320           | Airbus A320-200     |  5700
+ 321           | Airbus A321-200     |  5600
+ 319           | Airbus A319-100     |  6700
+ 733           | Boeing 737-300      |  4200
+ CN1           | Cessna 208 Caravan  |  1200
+ CR2           | Bombardier CRJ-200  |  2700
+(9 rows)
+
+ aircraft_code |        model        | range |          when_add          | operation 
+---------------+---------------------+-------+----------------------------+-----------
+ 773           | Boeing 777-300      | 11100 | 2020-11-29 10:19:33.272265 | INSERT
+ 763           | Boeing 767-300      |  7900 | 2020-11-29 10:19:33.272265 | INSERT
+ SU9           | Sukhoi SuperJet-100 |  3000 | 2020-11-29 10:19:33.272265 | INSERT
+ 320           | Airbus A320-200     |  5700 | 2020-11-29 10:19:33.272265 | INSERT
+ 321           | Airbus A321-200     |  5600 | 2020-11-29 10:19:33.272265 | INSERT
+ 319           | Airbus A319-100     |  6700 | 2020-11-29 10:19:33.272265 | INSERT
+ 733           | Boeing 737-300      |  4200 | 2020-11-29 10:19:33.272265 | INSERT
+ CN1           | Cessna 208 Caravan  |  1200 | 2020-11-29 10:19:33.272265 | INSERT
+ CR2           | Bombardier CRJ-200  |  2700 | 2020-11-29 10:19:33.272265 | INSERT
+(9 rows)
+
+INSERT 0 1
+ aircraft_code |        model        | range 
+---------------+---------------------+-------
+ 773           | Boeing 777-300      | 11100
+ 763           | Boeing 767-300      |  7900
+ SU9           | Sukhoi SuperJet-100 |  3000
+ 320           | Airbus A320-200     |  5700
+ 321           | Airbus A321-200     |  5600
+ 319           | Airbus A319-100     |  6700
+ 733           | Boeing 737-300      |  4200
+ CN1           | Cessna 208 Caravan  |  1200
+ CR2           | Bombardier CRJ-200  |  2700
+ XXX           | Needle              | 30000
+(10 rows)
+
+ aircraft_code |        model        | range |          when_add          | operation 
+---------------+---------------------+-------+----------------------------+-----------
+ 773           | Boeing 777-300      | 11100 | 2020-11-29 10:19:33.272265 | INSERT
+ 763           | Boeing 767-300      |  7900 | 2020-11-29 10:19:33.272265 | INSERT
+ SU9           | Sukhoi SuperJet-100 |  3000 | 2020-11-29 10:19:33.272265 | INSERT
+ 320           | Airbus A320-200     |  5700 | 2020-11-29 10:19:33.272265 | INSERT
+ 321           | Airbus A321-200     |  5600 | 2020-11-29 10:19:33.272265 | INSERT
+ 319           | Airbus A319-100     |  6700 | 2020-11-29 10:19:33.272265 | INSERT
+ 733           | Boeing 737-300      |  4200 | 2020-11-29 10:19:33.272265 | INSERT
+ CN1           | Cessna 208 Caravan  |  1200 | 2020-11-29 10:19:33.272265 | INSERT
+ CR2           | Bombardier CRJ-200  |  2700 | 2020-11-29 10:19:33.272265 | INSERT
+ XXX           | Needle              | 30000 | 2020-11-29 10:19:33.274102 | INSERT
+(10 rows)
+

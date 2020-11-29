@@ -1,0 +1,17 @@
+CREATE TABLE
+INSERT 0 3
+CREATE FUNCTION
+BEGIN
+  reffunc   
+------------
+ funccursor
+(1 row)
+
+ col 
+-----
+ 123
+ 456
+ 789
+(3 rows)
+
+COMMIT

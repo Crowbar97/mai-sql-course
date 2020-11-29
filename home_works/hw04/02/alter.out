@@ -1,0 +1,10 @@
+ record_book | subject | acad_year | term | mark 
+-------------+---------+-----------+------+------
+(0 rows)
+
+ALTER TABLE
+ record_book | subject | acad_year | term | mark | test_form 
+-------------+---------+-----------+------+------+-----------
+(0 rows)
+
+ALTER TABLE

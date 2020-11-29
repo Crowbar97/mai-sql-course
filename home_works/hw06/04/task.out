@@ -1,0 +1,47 @@
+SET
+CREATE TABLE
+INSERT 0 1339
+ aircraft_code | seat_no | fare_conditions 
+---------------+---------+-----------------
+ 321           | 10A     | Economy
+ 319           | 10A     | Economy
+ SU9           | 10A     | Economy
+ 320           | 10A     | Economy
+ 320           | 10B     | Economy
+ 733           | 10B     | Economy
+ 319           | 10B     | Economy
+ 321           | 10B     | Economy
+ 321           | 10C     | Economy
+ 320           | 10C     | Economy
+(10 rows)
+
+INSERT 0 1
+ aircraft_code | seat_no | fare_conditions 
+---------------+---------+-----------------
+ 320           | 10A     | Economy
+ 321           | 10A     | Economy
+ 319           | 10A     | Economy
+ SU9           | 10A     | Economy
+ 321           | 10AA    | Economy
+ 320           | 10B     | Economy
+ 733           | 10B     | Economy
+ 319           | 10B     | Economy
+ 321           | 10B     | Economy
+ 321           | 10C     | Economy
+(10 rows)
+
+INSERT 0 1
+ aircraft_code | seat_no | fare_conditions 
+---------------+---------+-----------------
+ 320           | 10A     | Economy
+ 321           | 10A     | Economy
+ 319           | 10A     | Economy
+ SU9           | 10A     | Economy
+ 321           | 10AA    | Economy
+ 320           | 10B     | Economy
+ 733           | 10B     | Economy
+ 319           | 10B     | Economy
+ 321           | 10B     | Economy
+ 321           | 10BB    | Economy
+(10 rows)
+

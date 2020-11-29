@@ -1,0 +1,18 @@
+SET
+                                                       QUERY PLAN                                                        
+-------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=236.31..236.34 rows=9 width=56) (actual time=2.284..2.286 rows=9 loops=1)
+   Sort Key: ((SubPlan 1)) DESC
+   Sort Method: quicksort  Memory: 25kB
+   ->  HashAggregate  (cost=1.11..236.17 rows=9 width=56) (actual time=1.013..2.248 rows=9 loops=1)
+         Group Key: a.aircraft_code
+         ->  Seq Scan on aircrafts a  (cost=0.00..1.09 rows=9 width=48) (actual time=0.013..0.015 rows=9 loops=1)
+         SubPlan 1
+           ->  Aggregate  (cost=26.10..26.11 rows=1 width=8) (actual time=0.245..0.245 rows=1 loops=9)
+                 ->  Seq Scan on routes r  (cost=0.00..25.88 rows=89 width=4) (actual time=0.075..0.235 rows=79 loops=9)
+                       Filter: (aircraft_code = a.aircraft_code)
+                       Rows Removed by Filter: 631
+ Planning Time: 1.061 ms
+ Execution Time: 2.785 ms
+(13 rows)
+

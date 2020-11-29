@@ -1,0 +1,22 @@
+SET
+CREATE TABLE
+CREATE TABLE AS
+ALTER TABLE
+ALTER TABLE
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Insert on aircrafts_log  (cost=1.09..1.31 rows=9 width=92)
+   CTE add_row
+     ->  Insert on aircrafts_tmp  (cost=0.00..1.09 rows=9 width=52)
+           ->  Seq Scan on aircrafts  (cost=0.00..1.09 rows=9 width=52)
+   ->  CTE Scan on add_row  (cost=0.00..0.22 rows=9 width=92)
+(5 rows)
+
+ aircraft_code | model | range 
+---------------+-------+-------
+(0 rows)
+
+ aircraft_code | model | range | when_add | operation 
+---------------+-------+-------+----------+-----------
+(0 rows)
+

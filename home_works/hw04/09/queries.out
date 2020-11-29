@@ -1,0 +1,28 @@
+INSERT 0 1
+ record_book | name | doc_ser | doc_num 
+-------------+------+---------+---------
+       12300 |      |     402 |  543281
+(1 row)
+
+DELETE 1
+ALTER TABLE
+psql:queries.sql:17: ERROR:  new row for relation "students" violates check constraint "students_name_check"
+DETAIL:  Failing row contains (12345, , 401, 523281).
+INSERT 0 1
+INSERT 0 1
+ record_book | name | doc_ser | doc_num | length 
+-------------+------+---------+---------+--------
+       12346 |      |     406 |  112233 |      1
+       12347 |      |     407 |  112234 |      2
+(2 rows)
+
+DELETE 2
+ALTER TABLE
+psql:queries.sql:31: ERROR:  new row for relation "students" violates check constraint "students_name_check1"
+DETAIL:  Failing row contains (12346,  , 406, 112233).
+psql:queries.sql:32: ERROR:  new row for relation "students" violates check constraint "students_name_check1"
+DETAIL:  Failing row contains (12347,   , 407, 112234).
+ record_book | name | doc_ser | doc_num | length 
+-------------+------+---------+---------+--------
+(0 rows)
+

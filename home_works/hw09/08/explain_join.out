@@ -1,0 +1,18 @@
+SET
+                                                          QUERY PLAN                                                          
+------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=31.83..31.85 rows=9 width=56) (actual time=0.677..0.679 rows=9 loops=1)
+   Sort Key: (count(r.aircraft_code)) DESC
+   Sort Method: quicksort  Memory: 25kB
+   ->  HashAggregate  (cost=31.60..31.69 rows=9 width=56) (actual time=0.634..0.638 rows=9 loops=1)
+         Group Key: a.aircraft_code
+         ->  Hash Right Join  (cost=1.20..28.05 rows=710 width=52) (actual time=0.043..0.434 rows=711 loops=1)
+               Hash Cond: (r.aircraft_code = a.aircraft_code)
+               ->  Seq Scan on routes r  (cost=0.00..24.10 rows=710 width=4) (actual time=0.007..0.114 rows=710 loops=1)
+               ->  Hash  (cost=1.09..1.09 rows=9 width=48) (actual time=0.017..0.017 rows=9 loops=1)
+                     Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                     ->  Seq Scan on aircrafts a  (cost=0.00..1.09 rows=9 width=48) (actual time=0.007..0.009 rows=9 loops=1)
+ Planning Time: 0.446 ms
+ Execution Time: 0.812 ms
+(13 rows)
+

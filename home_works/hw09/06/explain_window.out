@@ -1,0 +1,9 @@
+SET
+                                     QUERY PLAN                                      
+-------------------------------------------------------------------------------------
+ WindowAgg  (cost=148745.83..169660.35 rows=1045726 width=40)
+   ->  Sort  (cost=148745.83..151360.14 rows=1045726 width=32)
+         Sort Key: flight_id, amount DESC
+         ->  Seq Scan on ticket_flights  (cost=0.00..19172.26 rows=1045726 width=32)
+(4 rows)
+

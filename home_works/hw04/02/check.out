@@ -1,0 +1,29 @@
+INSERT 0 2
+INSERT 0 1
+ record_book |   subject   | acad_year | term | mark | test_form 
+-------------+-------------+-----------+------+------+-----------
+           1 | Базы данных | 2020      |    1 |    5 | экзамен
+(1 row)
+
+psql:check.sql:18: ERROR:  new row for relation "progress" violates check constraint "new_valid_mark"
+DETAIL:  Failing row contains (2, Базы данных, 2020, 1, 2, зачет).
+ record_book |   subject   | acad_year | term | mark | test_form 
+-------------+-------------+-----------+------+------+-----------
+           1 | Базы данных | 2020      |    1 |    5 | экзамен
+(1 row)
+
+psql:check.sql:26: ERROR:  new row for relation "progress" violates check constraint "valid_mark"
+DETAIL:  Failing row contains (2, Базы данных, 2020, 2, 1, зачет).
+ record_book |   subject   | acad_year | term | mark | test_form 
+-------------+-------------+-----------+------+------+-----------
+           1 | Базы данных | 2020      |    1 |    5 | экзамен
+(1 row)
+
+ALTER TABLE
+INSERT 0 1
+ record_book |   subject   | acad_year | term | mark | test_form 
+-------------+-------------+-----------+------+------+-----------
+           1 | Базы данных | 2020      |    1 |    5 | экзамен
+           2 | Базы данных | 2020      |    2 |    1 | зачет
+(2 rows)
+

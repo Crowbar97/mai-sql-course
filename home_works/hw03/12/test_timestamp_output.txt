@@ -1,0 +1,31 @@
+SET
+  DateStyle  
+-------------
+ German, DMY
+(1 row)
+
+      timestamp      
+---------------------
+ 18.05.2016 00:00:00
+(1 row)
+
+psql:test_timestamp.sql:9: ERROR:  date/time field value out of range: "05-18-2016"
+LINE 1: SELECT '05-18-2016'::timestamp;
+               ^
+HINT:  Perhaps you need a different "datestyle" setting.
+      timestamp      
+---------------------
+ 18.05.2016 00:00:00
+(1 row)
+
+SET
+psql:test_timestamp.sql:17: ERROR:  date/time field value out of range: "18-05-2016"
+LINE 1: SELECT '18-05-2016'::timestamp;
+               ^
+HINT:  Perhaps you need a different "datestyle" setting.
+      timestamp      
+---------------------
+ 18.05.2016 00:00:00
+(1 row)
+
+SET

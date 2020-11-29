@@ -1,0 +1,31 @@
+SET
+ DateStyle 
+-----------
+ ISO, DMY
+(1 row)
+
+    date    
+------------
+ 2016-05-18
+(1 row)
+
+psql:test_date.sql:10: ERROR:  date/time field value out of range: "05-18-2016"
+LINE 1: SELECT '05-18-2016'::date;
+               ^
+HINT:  Perhaps you need a different "datestyle" setting.
+    date    
+------------
+ 2016-05-18
+(1 row)
+
+SET
+psql:test_date.sql:18: ERROR:  date/time field value out of range: "18-05-2016"
+LINE 1: SELECT '18-05-2016'::date;
+               ^
+HINT:  Perhaps you need a different "datestyle" setting.
+    date    
+------------
+ 2016-05-18
+(1 row)
+
+SET

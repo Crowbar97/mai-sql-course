@@ -1,0 +1,18 @@
+INSERT 0 1
+psql:test.sql:2: ERROR:  column "yes" does not exist
+LINE 1: INSERT INTO test_bool VALUES ( yes, 'yes' );
+                                       ^
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:test.sql:6: ERROR:  column "a" is of type boolean but expression is of type integer
+LINE 1: INSERT INTO test_bool VALUES ( 1, 'true' );
+                                       ^
+HINT:  You will need to rewrite or cast the expression.
+INSERT 0 1
+psql:test.sql:8: ERROR:  column "truth" does not exist
+LINE 1: INSERT INTO test_bool VALUES ( 't', truth );
+                                            ^
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1

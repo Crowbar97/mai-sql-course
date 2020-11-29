@@ -1,0 +1,16 @@
+psql:insert_second.sql:2: ERROR:  duplicate key value violates unique constraint "test_serial_pkey"
+DETAIL:  Key (id)=(2) already exists.
+ id |    name    
+----+------------
+  1 | Вишневая
+  2 | Прохладная
+(2 rows)
+
+INSERT 0 1
+ id |    name    
+----+------------
+  1 | Вишневая
+  2 | Прохладная
+  3 | Грушевая
+(3 rows)
+

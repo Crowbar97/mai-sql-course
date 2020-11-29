@@ -1,0 +1,40 @@
+SET
+Timing is on.
+ count 
+-------
+ 17291
+(1 row)
+
+Time: 274.592 ms
+ count  
+--------
+ 107642
+(1 row)
+
+Time: 138.141 ms
+ count  
+--------
+ 920793
+(1 row)
+
+Time: 173.862 ms
+CREATE INDEX
+Time: 1596.396 ms (00:01.596)
+ count 
+-------
+ 17291
+(1 row)
+
+Time: 19.161 ms
+ count  
+--------
+ 107642
+(1 row)
+
+Time: 131.785 ms
+ count  
+--------
+ 920793
+(1 row)
+
+Time: 170.337 ms
