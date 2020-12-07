@@ -1,0 +1,11 @@
+   nickname   | first_name | view_count | rank 
+--------------+------------+------------+------
+ Crowbar97    | Gordon     |       5348 |    1
+ Blossom88    | Марья      |       2486 |    1
+ Blossom88    | Марья      |        582 |    2
+ GuitarHero82 | Роман      |       2548 |    1
+ GuitarHero82 | Роман      |       1526 |    2
+ GuitarHero82 | Роман      |       1328 |    3
+ LightBringer | Святослав  |       3459 |    1
+(7 rows)
+

@@ -1,0 +1,19 @@
+CREATE PROCEDURE
+ id | nickname | _level 
+----+----------+--------
+ 13 | Moderor  |      2
+(1 row)
+
+CALL
+ id | nickname | _level 
+----+----------+--------
+ 13 | Moderor  |      3
+(1 row)
+
+psql:increase_level.sql:34: ERROR:  Пользователь имеет максимальный уровень привилегий!
+CONTEXT:  PL/pgSQL function increase_level(integer) line 7 at RAISE
+ id | nickname | _level 
+----+----------+--------
+ 13 | Moderor  |      3
+(1 row)
+

@@ -1,0 +1,137 @@
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+INSERT 0 14
+ id |             email              |    _login    |      _password      | _level | _state |    nickname    | balance |   first_name   | middle_name | last_name | gender | birth_date | locality | info | status_message | registration_date | last_visit_date | activity_time 
+----+--------------------------------+--------------+---------------------+--------+--------+----------------+---------+----------------+-------------+-----------+--------+------------+----------+------+----------------+-------------------+-----------------+---------------
+  1 | RealGordonFreeman@XPhysics.com | GF789        | Black159Mesa        |      0 | 1      | Crowbar97      |      20 | Gordon         |             | Freeman   | 1      | 1950-01-01 |          |      |                | 2004-05-30        |                 | 
+  2 | John1940@gmail.com             | John40       | YoYo40              |      0 | 1      | Johny19        |      80 | Иван           |             | Дубравин  | 1      | 1940-05-07 |          |      |                | 2008-06-08        |                 | 
+  3 | MaryFlower@yandex.ru           | Mary357      | Blossom8And8Die     |      0 | 1      | Blossom88      |      90 | Марья          |             | -         | 0      | 1988-07-18 |          |      |                | 2006-03-05        |                 | 
+  4 | WhatIsLove@yandex.ru           | BloodVlad159 | BabyDontHurtMe1     |      0 | 1      | BloodVlad      |     150 | Владислав      |             | Лихачев   | 1      | 1997-04-16 |          |      |                | 2012-12-15        |                 | 
+  5 | HellFever999@yandex.ru         | RomanG       | GuitarForever!888   |      0 | 1      | GuitarHero82   |    1800 | Роман          |             | Конограй  | 1      | 1982-12-10 |          |      |                | 2014-07-18        |                 | 
+  6 | LightBringer33@mail.ru         | LB33         | LastHope0           |      0 | 1      | LightBringer   |    1260 | Святослав      |             | Кондратов | 1      | 1933-05-03 |          |      |                | 2010-03-24        |                 | 
+  7 | Caesar100@yandex.ru            | TheOne       | The1Only1One        |      0 | 1      | Julian         |    1250 | Юлиан          |             | Белозеров | 1      | 0003-01-02 |          |      |                | 2007-04-08        |                 | 
+  8 | SuperAlex2010@gmail.com        | Streamer7    | RoadTo100k          |      0 | 1      | DreamStream    |    8800 | Александр      |             | Харитонов | 1      | 2010-06-19 |          |      |                | 2016-07-22        |                 | 
+  9 | Columbus51@yahoo.com           | Columbus     | Disc1492overy       |      0 | 1      | IndiaFinder    |    1200 | Христофор      |             | Колумбов  | 1      | 1951-12-10 |          |      |                | 1997-12-03        |                 | 
+ 10 | Sheep@gmail.com                | WhiteSheep   | H@CK_THE_W0RLD      |      0 | 0      | WhiteSheep     |    2100 | Иван           |             | Овечкин   | 1      | 1997-12-18 |          |      |                | 2017-07-01        |                 | 
+ 11 | SpamOverlord@gmail.com         | SomeSpam     | ALOTOFSPAMAHAHAH999 |      0 | 1      | NoSpamFromHere |     500 | Денис          |             |           | 1      | 1992-03-28 |          |      |                | 2016-10-09        |                 | 
+ 12 | MyBlogAdmin@gmail.com          | Admin        | #ARENqAL220vFRfrst  |      3 | 1      | Admin          |   10000 | Иван           |             | Иванов    | 1      | 1960-01-15 |          |      |                | 1978-03-01        |                 | 
+ 13 | MyBlogModeror@gmail.com        | Moderor      | #MdrDsadppge78e     |      2 | 1      | Moderor        |    4500 | Денис          |             | Денисов   | 1      | 1962-02-20 |          |      |                | 1978-03-01        |                 | 
+ 14 | MyBlogSystem@gmail.com         | System       | #Ssxwzqr789S        |      1 | 1      | MyBlogTeam     |    3200 | Команда MyBlog |             |           |        |            |          |      |                | 1978-03-01        |                 | 
+(14 rows)
+
+CREATE TABLE
+INSERT 0 3
+ id |          name          
+----+------------------------
+  1 | Рассылка спама
+  2 | Попытка взлома сервиса
+  3 | Неадекватное поведение
+(3 rows)
+
+CREATE TABLE
+INSERT 0 2
+ user_id | reason_id 
+---------+-----------
+      10 |         2
+       8 |         3
+(2 rows)
+
+CREATE TABLE
+INSERT 0 7
+ id | user_id | _state |        title        |                      body                       | publication_date | view_count 
+----+---------+--------+---------------------+-------------------------------------------------+------------------+------------
+  1 |       1 | 0      | Theoretical physics | Theoretical physics...                          | 2005-06-10       |       5348
+  2 |       3 | 1      | Flower Power        | Garden roses...                                 | 2007-05-10       |        582
+  3 |       3 | 1      | Autumn Garden       | Autumn smell...                                 | 2008-05-09       |       2486
+  4 |       5 | 1      | Guitar Lesson № 1   | Today I will start...                           | 2014-07-20       |       1328
+  5 |       5 | 1      | Guitar Lesson № 2   | Today we will continue...                       | 2014-08-01       |       1526
+  6 |       5 | 1      | Guitar Lesson № 3   | Today we will play our first composition...     | 2014-08-15       |       2548
+  7 |       6 | 1      | What is kindness?   | What is kindness? It is a very good question... | 2011-03-06       |       3459
+(7 rows)
+
+CREATE TABLE
+INSERT 0 4
+ id |   title   
+----+-----------
+  1 | Science
+  2 | Tutorials
+  3 | Common
+  4 | Music
+(4 rows)
+
+CREATE TABLE
+INSERT 0 11
+ topic_id | post_id 
+----------+---------
+        1 |       1
+        2 |       2
+        2 |       3
+        3 |       3
+        2 |       4
+        4 |       4
+        2 |       5
+        4 |       5
+        2 |       6
+        4 |       6
+        3 |       7
+(11 rows)
+
+CREATE TABLE
+INSERT 0 36
+ post_id | user_id | mark 
+---------+---------+------
+       1 |       2 |    5
+       1 |       4 |    3
+       1 |       7 |    2
+       1 |       8 |    4
+       2 |       1 |    5
+       2 |       2 |    1
+       2 |       4 |    2
+       2 |       5 |    4
+       3 |       8 |    3
+       3 |       9 |    2
+       3 |      10 |    1
+       3 |       5 |    4
+       3 |       4 |    4
+       4 |       9 |    3
+       4 |       2 |    2
+       4 |       4 |    2
+       4 |       3 |    5
+       4 |      11 |    5
+       4 |      12 |    5
+       4 |      13 |    3
+       5 |       4 |    4
+       5 |       3 |    5
+       5 |      11 |    4
+       5 |      12 |    3
+       5 |      13 |    2
+       6 |       2 |    4
+       6 |       5 |    4
+       6 |       3 |    4
+       6 |      11 |    2
+       6 |      12 |    3
+       6 |      13 |    3
+       7 |       2 |    2
+       7 |       3 |    4
+       7 |       8 |    3
+       7 |       7 |    3
+       7 |       1 |    3
+(36 rows)
+
+CREATE TABLE
+INSERT 0 4
+ id | post_id | user_id |                                                              body                                                               |       date_and_time        
+----+---------+---------+---------------------------------------------------------------------------------------------------------------------------------+----------------------------
+  1 |       1 |       2 | Это потрясающе! Никогда не был равнодушен к физике!                                                                             | 2020-12-07 11:04:38.327777
+  2 |       1 |       5 | Эта статья вдохновила меня на запись нового альбома!                                                                            | 2020-12-07 11:04:38.327777
+  3 |       6 |       4 | Скоро сам буду учить друзей играть на гитаре!                                                                                   | 2020-12-07 11:04:38.327777
+  4 |       2 |      10 | Бесплатно рассылаю семена растений, для того, чтобы их получить, ввойдите в свой личный кабинет на сайте http://accStealing.com | 2020-12-07 11:04:38.327777
+(4 rows)
+

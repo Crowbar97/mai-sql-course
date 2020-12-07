@@ -1,0 +1,15 @@
+CREATE FUNCTION
+DROP TRIGGER
+CREATE TRIGGER
+ first_name | nickname | _state 
+------------+----------+--------
+ Иван       | Johny19  | 1
+(1 row)
+
+psql:user_delete_checker.sql:33: ERROR:  Нельзя удалять активный аккаунт!
+CONTEXT:  PL/pgSQL function check_user_delete() line 4 at RAISE
+ first_name | nickname | _state 
+------------+----------+--------
+ Иван       | Johny19  | 1
+(1 row)
+

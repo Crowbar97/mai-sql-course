@@ -1,0 +1,14 @@
+CREATE PROCEDURE
+ id |   nickname   | balance 
+----+--------------+---------
+  2 | Johny19      |      80
+  5 | GuitarHero82 |    1800
+(2 rows)
+
+CALL
+ id |   nickname   | balance 
+----+--------------+---------
+  5 | GuitarHero82 |    1700
+  2 | Johny19      |     180
+(2 rows)
+

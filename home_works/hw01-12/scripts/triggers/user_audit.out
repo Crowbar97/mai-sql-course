@@ -1,0 +1,11 @@
+DROP TABLE
+CREATE TABLE
+CREATE FUNCTION
+DROP TRIGGER
+CREATE TRIGGER
+UPDATE 1
+ id | user_id | last_name |         changed_on         
+----+---------+-----------+----------------------------
+  1 |       2 | Дубравин  | 2020-12-07 10:14:49.155986
+(1 row)
+
