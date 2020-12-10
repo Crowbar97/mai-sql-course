@@ -15,3 +15,8 @@ changing active schema:
 ```sql
 set search_path = <schema name>;
 ```
+
+dumping whole data base:
+```bash
+sudo -u postgres pg_dump forum > forum_dump.sql
+```

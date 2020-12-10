@@ -1,6 +1,3 @@
--- TODO: user age rank field procedure?
--- TODO: add data to all tables
-
 -- Опасная зона ------------------------------
 DROP TABLE IF EXISTS post_comments;
 DROP TABLE IF EXISTS post_marks_and_users;
