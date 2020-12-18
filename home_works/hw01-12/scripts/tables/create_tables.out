@@ -44,17 +44,23 @@ INSERT 0 2
 (2 rows)
 
 CREATE TABLE
-INSERT 0 7
- id | user_id | _state |        title        |                      body                       | publication_date | view_count 
-----+---------+--------+---------------------+-------------------------------------------------+------------------+------------
-  1 |       1 | 0      | Theoretical physics | Theoretical physics...                          | 2005-06-10       |       5348
-  2 |       3 | 1      | Flower Power        | Garden roses...                                 | 2007-05-10       |        582
-  3 |       3 | 1      | Autumn Garden       | Autumn smell...                                 | 2008-05-09       |       2486
-  4 |       5 | 1      | Guitar Lesson № 1   | Today I will start...                           | 2014-07-20       |       1328
-  5 |       5 | 1      | Guitar Lesson № 2   | Today we will continue...                       | 2014-08-01       |       1526
-  6 |       5 | 1      | Guitar Lesson № 3   | Today we will play our first composition...     | 2014-08-15       |       2548
-  7 |       6 | 1      | What is kindness?   | What is kindness? It is a very good question... | 2011-03-06       |       3459
-(7 rows)
+INSERT 0 13
+ id | user_id | _state |         title         |                      body                       | publication_date | view_count 
+----+---------+--------+-----------------------+-------------------------------------------------+------------------+------------
+  1 |       1 | 0      | Theoretical physics   | Theoretical physics...                          | 2005-06-10       |       5348
+  2 |       3 | 1      | Flower Power          | Garden roses...                                 | 2007-05-10       |        582
+  3 |       3 | 1      | Autumn Garden         | Autumn smell...                                 | 2008-05-09       |       2486
+  4 |       5 | 1      | Guitar Lesson № 1     | Today I will start...                           | 2014-07-20       |       1328
+  5 |       5 | 1      | Guitar Lesson № 2     | Today we will continue...                       | 2014-08-01       |       1526
+  6 |       5 | 1      | Guitar Lesson № 3     | Today we will play our first composition...     | 2014-08-15       |       2548
+  7 |       6 | 1      | What is kindness?     | What is kindness? It is a very good question... | 2011-03-06       |       3459
+  8 |       1 | 0      | Classic chemistry     | Lets talk about chemistry...                    | 2005-08-12       |       5360
+  9 |       3 | 1      | Green fence           | Its good idea to...                             | 2007-05-15       |        582
+ 10 |       3 | 1      | Spring Garden         | First you should...                             | 2008-03-08       |        512
+ 11 |       5 | 1      | Guitar Lesson № 4     | What do you know about folk music?              | 2014-09-03       |       1372
+ 12 |       5 | 1      | When guitar is boring | Vivaldi on the battery...                       | 2014-09-15       |        546
+ 13 |       5 | 1      | About concerts        | How to visit rock concerts?                     | 2014-10-14       |       2548
+(13 rows)
 
 CREATE TABLE
 INSERT 0 4
@@ -129,9 +135,9 @@ CREATE TABLE
 INSERT 0 4
  id | post_id | user_id |                                                              body                                                               |       date_and_time        
 ----+---------+---------+---------------------------------------------------------------------------------------------------------------------------------+----------------------------
-  1 |       1 |       2 | Это потрясающе! Никогда не был равнодушен к физике!                                                                             | 2020-12-10 12:50:29.365845
-  2 |       1 |       5 | Эта статья вдохновила меня на запись нового альбома!                                                                            | 2020-12-10 12:50:29.365845
-  3 |       6 |       4 | Скоро сам буду учить друзей играть на гитаре!                                                                                   | 2020-12-10 12:50:29.365845
-  4 |       2 |      10 | Бесплатно рассылаю семена растений, для того, чтобы их получить, ввойдите в свой личный кабинет на сайте http://accStealing.com | 2020-12-10 12:50:29.365845
+  1 |       1 |       2 | Это потрясающе! Никогда не был равнодушен к физике!                                                                             | 2020-12-18 08:53:06.054542
+  2 |       1 |       5 | Эта статья вдохновила меня на запись нового альбома!                                                                            | 2020-12-18 08:53:06.054542
+  3 |       6 |       4 | Скоро сам буду учить друзей играть на гитаре!                                                                                   | 2020-12-18 08:53:06.054542
+  4 |       2 |      10 | Бесплатно рассылаю семена растений, для того, чтобы их получить, ввойдите в свой личный кабинет на сайте http://accStealing.com | 2020-12-18 08:53:06.054542
 (4 rows)
 

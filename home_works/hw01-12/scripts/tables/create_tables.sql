@@ -114,7 +114,13 @@ INSERT INTO posts
 (5, B'1', 'Guitar Lesson № 1', 'Today I will start...', '07/20/2014', 1328 ),
 (5, B'1', 'Guitar Lesson № 2', 'Today we will continue...', '08/01/2014', 1526 ),
 (5, B'1', 'Guitar Lesson № 3', 'Today we will play our first composition...', '08/15/2014', 2548 ),
-(6, B'1', 'What is kindness?', 'What is kindness? It is a very good question...', '03/06/2011', 3459 );
+(6, B'1', 'What is kindness?', 'What is kindness? It is a very good question...', '03/06/2011', 3459 ),
+(1, B'0', 'Classic chemistry', 'Lets talk about chemistry...', '08/12/2005', 5360 ),
+(3, B'1', 'Green fence', 'Its good idea to...', '05/15/2007', 582 ),
+(3, B'1', 'Spring Garden', 'First you should...', '03/08/2008', 512 ),
+(5, B'1', 'Guitar Lesson № 4', 'What do you know about folk music?', '09/03/2014', 1372 ),
+(5, B'1', 'When guitar is boring', 'Vivaldi on the battery...', '09/15/2014', 546 ),
+(5, B'1', 'About concerts', 'How to visit rock concerts?', '10/14/2014', 2548 );
 
 SELECT * FROM posts;
 
